@@ -70,7 +70,7 @@ As you can see there is no loop included in the code. To run this program period
 sudo apt-get install gnome-schedule
 ```
 
-Then you can launch the program Scheduled Tasks from the main menu. And that is it!
+Then you can launch the program Scheduled Tasks from the main menu. And that's it!
 
 
 ## AT THE END
