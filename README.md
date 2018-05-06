@@ -37,15 +37,15 @@ sudo ./Adafruit_DHT 11 4
 "11" is a DHT sensor model (there are also models 22), and "4" is a GPIO pin to which we have our sensor connected. Sometimes we have to enter this command several times before measurements appear. This is due to the fact that the sensor itself checks the temperature and humidity from time to time. If we see the current temperature and air humidity, it means that everything works and we can go further.
 
 
-### Raspberry Pi Camera
+#### Raspberry Pi Camera
 I recommend to use official tutorial available [here](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)
  
 
 
-### Tweepy
+#### Tweepy
 Now he have working camera and sensor so it's time to set Twitter API which is necessary to use Tweepy. 
 
-The API is free to use, but you have to have a Twitter account and to register your application in order to get access to the API. I recommend to create a new account, because I think your friends and other followers donÕt what to see your tweet with your "hydroponic garden" :simple_smile:
+The API is free to use, but you have to have a Twitter account and to register your application in order to get access to the API. I recommend to create a new account, because I think your friends and other followers don't what to see your tweet with your "hydroponic garden" :simple_smile:
 
 **TIP:** If you use Twitter on your phone, follow your "project account". That allows you to receive tweets on your phone (through your private Twitter account). 
 
@@ -62,9 +62,9 @@ sudo pip install tweepy
 ## CODE
 Make sure that you've installed python3 and your default terminal settings are set to use python3 (that's common mistake!)
 
-Make a copy of the code or download hydroponic_plants.py. 
+Make a copy of the code or download **hydroponic_plants.py**
 
-As you can see there is no loop included in the code. To run this program periodically and at fixed intervals you could use Crontab (tool builded on Unix systems) or use Cron GUI - The Gnome-Schedule. To install this run:
+As you can see there is no loop included in the code. To run this program periodically and at fixed intervals you could use **Crontab** (tool builded on Unix systems) or use Cron GUI - **The Gnome-Schedule**. To install this run:
 
 ```
 sudo apt-get install gnome-schedule
@@ -75,6 +75,5 @@ Then you can launch the program Scheduled Tasks from the main menu. And that is 
 
 ## AT THE END
 I hope that this program will be useful for you all. Feel free to use it, develop and add other sensor. There is no limit :) 
-
 I will be working on it by adding some new features so stay tuned and furthermore HAVE FUN!
 
