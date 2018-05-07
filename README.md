@@ -29,9 +29,17 @@ You'll need to install the python, picamera, tweepy and DHT11 sensor. First of a
 Once we have all the equipment connected, we can go to software installation. At the beginning, we will test whether our sensor works. For this purpose, we collect the ready code from Githuba.
 
 ```
-git clone git: //github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code.git
-cd Adafruit-Raspberry-Pi-Python-Code / Adafruit_DHT_Driver
-sudo ./Adafruit_DHT 11 4
+sudo apt-get update
+sudo apt-get install -y python3 python3-pip python-dev
+sudo pip3 install rpi.gpio
+sudo apt-get install build-essential python-dev
+sudo git clone git://github.com/adafruit/Adafruit_Python_DHT.git
+cd Adafruit_Python_DHT
+
+sudo python setup.py install
+cd examples
+sudo chmod +x AdafruitDHT.py
+sudo ./AdafruitDHT.py 11 4
 ```
 
 "11" is a DHT sensor model (there are also models 22), and "4" is a GPIO pin to which we have our sensor connected. Sometimes we have to enter this command several times before measurements appear. This is due to the fact that the sensor itself checks the temperature and humidity from time to time. If we see the current temperature and air humidity, it means that everything works and we can go further.
@@ -60,7 +68,7 @@ sudo pip install tweepy
 ```
 
 ## CODE
-Make sure that you've installed python3 and your default terminal settings are set to use python3 (that's common mistake!)
+Make sure that you've installed python3 (command list from installing DHT11 sensor) and your default terminal settings are set to use python3 (that's common mistake!)
 
 Make a copy of the code or download **hydroponic_plants.py**
 
